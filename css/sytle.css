@@ -1,0 +1,40 @@
+body{
+    background-color: #f5eaea;
+}
+h1{
+    position: relative;
+    width: max-content;
+    font-size: 55px;
+}
+h1:hover{
+    font-size: 120px;
+    color: rgb(235, 52, 83);
+    background-color: green;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px;
+    
+}
+h1::after{
+    content: '';
+    background: linear-gradient(to right,red,green,yellow,pink,black,brown);
+    border-radius: 100px 50px;
+    height: 14px;
+    width: 100%;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+}
+h1:hover::after{
+    width: 50%;
+    height: 40px;
+    bottom: -35px;
+}
+i{
+    font-size: 180px;
+    color: #3d13b1;
+}
+i:hover{
+    background-color: #3d13b1;
+    color: #fff;
+    border-radius: 30px;
+}
